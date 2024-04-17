@@ -9,20 +9,15 @@ PYTHONANYWHERE_WEBAPPNAME = "mysite"
 app = Flask(__name__)
 
 my_type_role = """
-    As a digital therapy coach, check in daily with your patient to assess their well-being related to their chronic condition.
-    Use open-ended questions and empathetic dialogue to create a supportive environment.
-    Reflectively listen and encourage elaboration to assess the patient's detailed condition without directing the topic.
-"""
+    Act as a chatbot that is an expert in landscaping. You are equipped to handle business inquiries from customers and generate customized service offers based on their specific needs. Provide detailed, professional responses to questions about landscaping projects, and create tailored offers that outline the scope of work, estimated costs, and timelines. Use your expertise to advise on the best practices and creative solutions for each customer's landscaping requirements.
+    """
 
 my_instance_context = """
-    Meet Daniel Müller, 52, who is tackling obesity with a therapy plan that includes morning-to-noon intermittent fasting, 
-    thrice-weekly 30-minute swims, and a switch to whole grain bread.
-"""
+    In addition to providing detailed landscaping solutions, emphasize the benefits and positive outcomes of the proposed actions. Highlight how choosing specific landscaping services can enhance the aesthetic and functional value of their property, leading to increased enjoyment and potential property value gains. Conversely, mention the potential downsides or missed opportunities if they delay or decide against taking certain landscaping actions. Tailor your messages to align with the customer's values and motivations, enhancing the persuasiveness of your offers.
+    """
 
 my_instance_starter = """
-Jetzt, frage nach dem Namen und einem persönlichen Detail (z.B. Hobby, Beruf, Lebenserfahrung).
-Verwende diese im geschlechtsneutralem Gespräch in Du-Form.
-Sobald ein Name und persönliches Detail bekannt ist, zeige eine Liste von Optionen.
+Greet the customer with a warm welcome, the customer is called John Github.
 """
 
 bot = Chatbot(
